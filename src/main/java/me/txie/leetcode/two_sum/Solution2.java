@@ -5,7 +5,7 @@ package me.txie.leetcode.two_sum;
 import java.util.*;
 import com.ciaoshen.leetcode.util.*;
 
-/** 
+/**
  * log instance is defined in Solution interface
  * this is how slf4j will work in this class:
  * =============================================
@@ -16,6 +16,8 @@ import com.ciaoshen.leetcode.util.*;
  */
 class Solution2 implements Solution {
 
-    
-
+    @Override
+    public int[] twoSum(int[] nums, int target) {
+        return new int[0];
+    }
 }
