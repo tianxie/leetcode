@@ -16,12 +16,13 @@ import com.ciaoshen.leetcode.util.*;
  */
 class Solution1 implements Solution {
 
-    private int minDiff, prev;
+    private int minDiff;
+    private TreeNode prev;
 
     @Override
     public int minDiffInBST(TreeNode root) {
         minDiff = Integer.MAX_VALUE;
-        prev = -1;
+        prev = null;
         inorder(root);
         return minDiff;
     }
@@ -29,10 +30,10 @@ class Solution1 implements Solution {
     private void inorder(TreeNode node) {
         if (node == null) return;
         inorder(node.left);
-        if (prev >= 0) {
-            minDiff = Math.min(minDiff, Math.abs(node.val - prev));
+        if (prev != null) {
+            minDiff = Math.min(minDiff, Math.abs(node.val - prev.val));
         }
-        prev = node.val;
+        prev = node;
         inorder(node.right);
     }
 }
