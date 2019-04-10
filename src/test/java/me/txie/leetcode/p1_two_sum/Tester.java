@@ -1,7 +1,7 @@
 /**
- * Leetcode - two_sum
+ * Leetcode - p1_two_sum
  */
-package me.txie.leetcode.two_sum;
+package me.txie.leetcode.p1_two_sum;
 
 import java.util.*;
 

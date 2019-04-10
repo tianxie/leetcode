@@ -1,9 +1,7 @@
 /**
- * Leetcode - two_sum
+ * Leetcode - p1_two_sum
  */
-package me.txie.leetcode.two_sum;
-import java.util.*;
-import com.ciaoshen.leetcode.util.*;
+package me.txie.leetcode.p1_two_sum;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

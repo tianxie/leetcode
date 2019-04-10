@@ -1,11 +1,7 @@
 /**
- * Leetcode - two_sum
+ * Leetcode - p1_two_sum
  */
-package me.txie.leetcode.two_sum;
-
-import java.util.*;
-
-import com.ciaoshen.leetcode.util.*;
+package me.txie.leetcode.p1_two_sum;
 
 /**
  * log instance is defined in Solution interface
@@ -18,6 +14,8 @@ import com.ciaoshen.leetcode.util.*;
  */
 class Solution1 implements Solution {
 
+    // O(n^2) runtime, O(1) space
+    @Override
     public int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length - 1; i++) {
             for (int j = i + 1; j < nums.length; j++) {
