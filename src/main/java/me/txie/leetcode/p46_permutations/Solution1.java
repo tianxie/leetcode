@@ -22,7 +22,7 @@ class Solution1 implements Solution {
 
     @Override
     public List<List<Integer>> permute(int[] nums) {
-        int[] a = new int[nums.length];
+        int[] a = new int[nums.length + 1]; // 解从1开始
         backtrack(a, 0, nums); //
         return permutations;
     }
@@ -33,9 +33,9 @@ class Solution1 implements Solution {
             process_solution(a, k, input);
         } else {
             k++;
-            int n_candidates = construct_candidates(a, k - 1, input, c);
+            int n_candidates = construct_candidates(a, k, input, c);
             for (int i = 0; i < n_candidates; i++) {
-                a[k - 1] = c[i];
+                a[k] = c[i];
                 make_move(a, k, input);
                 backtrack(a, k, input);
                 if (finished) return;
@@ -49,13 +49,16 @@ class Solution1 implements Solution {
     }
 
     private void process_solution(int[] a, int k, int[] input) {
-        List<Integer> list = Arrays.stream(a).boxed().collect(Collectors.toList());
+        List<Integer> list = Arrays.stream(a)
+                .skip(1) // 解从1开始
+                .boxed()
+                .collect(Collectors.toList());
         permutations.add(list);
     }
 
     private int construct_candidates(int[] a, int k, int[] input, int[] c) {
         Set<Integer> in_perm = new HashSet<>();
-        for (int i = 0; i < k; i++) {
+        for (int i = 1; i < k; i++) {
             in_perm.add(a[i]);
         }
         int n_candidates = 0;
