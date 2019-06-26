@@ -2,7 +2,7 @@ package me.txie.leetcode.${packageName}
 
 import spock.lang.Specification
 
-class Solution1Spec extends Specification {
+class SolutionSpec extends Specification {
     def "TwoSum"() {
         given: "Solution1"
         Solution solution = new Solution1();
