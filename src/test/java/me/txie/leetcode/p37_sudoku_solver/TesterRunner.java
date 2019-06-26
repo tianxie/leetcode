@@ -1,13 +1,13 @@
 /**
- * Leetcode - p37_sudoku_solver
+ * LeetCode - p37_sudoku_solver
  */
 package me.txie.leetcode.p37_sudoku_solver;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

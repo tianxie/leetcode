@@ -1,13 +1,13 @@
 /**
- * Leetcode - p944_delete_columns_to_make_sorted
+ * LeetCode - p944_delete_columns_to_make_sorted
  */
 package me.txie.leetcode.p944_delete_columns_to_make_sorted;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

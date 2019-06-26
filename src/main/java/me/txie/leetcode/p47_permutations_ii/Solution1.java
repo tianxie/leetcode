@@ -1,5 +1,5 @@
 /**
- * Leetcode - p47_permutations_ii
+ * LeetCode - p47_permutations_ii
  */
 package me.txie.leetcode.p47_permutations_ii;
 
@@ -15,7 +15,7 @@ import static java.util.stream.Collectors.groupingBy;
  * this is how slf4j will work in this class:
  * =============================================
  * if (log.isDebugEnabled()) {
- *     log.debug("a + b = {}", sum);
+ * log.debug("a + b = {}", sum);
  * }
  * =============================================
  */
@@ -54,7 +54,7 @@ class Solution1 implements Solution {
 
     private void processSolution(int[] a, int k, AuxiliaryInfo info) {
         List<Integer> list = Arrays.stream(a).skip(1) // 解从1开始
-                .boxed().collect(Collectors.toList());
+            .boxed().collect(Collectors.toList());
         permutations.add(list);
     }
 
@@ -91,8 +91,8 @@ class Solution1 implements Solution {
 
         AuxiliaryInfo(int[] nums) {
             Map<Integer, Long> map = Arrays.stream(nums)
-                    .boxed()
-                    .collect(groupingBy(identity(), counting()));
+                .boxed()
+                .collect(groupingBy(identity(), counting()));
             this.groupByCount = Collections.unmodifiableMap(map);
             this.length = nums.length;
         }

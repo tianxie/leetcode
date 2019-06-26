@@ -1,13 +1,13 @@
 /**
- * Leetcode - p3_longest_substring_without_repeating_characters
+ * LeetCode - p3_longest_substring_without_repeating_characters
  */
 package me.txie.leetcode.p3_longest_substring_without_repeating_characters;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

@@ -1,7 +1,7 @@
 package me.txie.leetcode.generator;
 
 public class Problem {
-    
+
     private String packageName;
     private String problemName;
     private String problemSignature;

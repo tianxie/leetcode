@@ -1,12 +1,13 @@
 /**
- * Leetcode - p1_two_sum
+ * LeetCode - p1_two_sum
  */
 package me.txie.leetcode.p1_two_sum;
 
 // basic util
+
 import java.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

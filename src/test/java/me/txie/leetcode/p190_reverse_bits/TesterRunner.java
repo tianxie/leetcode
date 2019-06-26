@@ -1,13 +1,13 @@
 /**
- * Leetcode - p190_reverse_bits
+ * LeetCode - p190_reverse_bits
  */
 package me.txie.leetcode.p190_reverse_bits;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

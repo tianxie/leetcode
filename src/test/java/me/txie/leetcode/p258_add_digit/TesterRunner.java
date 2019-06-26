@@ -1,13 +1,13 @@
 /**
- * Leetcode - p258_add_digit
+ * LeetCode - p258_add_digit
  */
 package me.txie.leetcode.p258_add_digit;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

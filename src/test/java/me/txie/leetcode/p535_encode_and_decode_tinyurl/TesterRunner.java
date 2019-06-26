@@ -1,13 +1,13 @@
 /**
- * Leetcode - p535_encode_and_decode_tinyurl
+ * LeetCode - p535_encode_and_decode_tinyurl
  */
 package me.txie.leetcode.p535_encode_and_decode_tinyurl;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

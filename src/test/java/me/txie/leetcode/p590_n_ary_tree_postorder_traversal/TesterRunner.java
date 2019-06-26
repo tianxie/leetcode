@@ -1,13 +1,13 @@
 /**
- * Leetcode - p590_n_ary_tree_postorder_traversal
+ * LeetCode - p590_n_ary_tree_postorder_traversal
  */
 package me.txie.leetcode.p590_n_ary_tree_postorder_traversal;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

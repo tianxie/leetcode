@@ -1,13 +1,13 @@
 /**
- * Leetcode - p191_number_of_1_bits
+ * LeetCode - p191_number_of_1_bits
  */
 package me.txie.leetcode.p191_number_of_1_bits;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

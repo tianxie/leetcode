@@ -1,25 +1,25 @@
 /**
- * Leetcode - p500_keyboard_row
+ * LeetCode - p500_keyboard_row
  */
 package me.txie.leetcode.p500_keyboard_row;
-import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 
-/** 
+import java.util.*;
+
+/**
  * log instance is defined in Solution interface
  * this is how slf4j will work in this class:
  * =============================================
- *     if (log.isDebugEnabled()) {
- *         log.debug("a + b = {}", sum);
- *     }
+ * if (log.isDebugEnabled()) {
+ * log.debug("a + b = {}", sum);
+ * }
  * =============================================
  */
 class Solution2 implements Solution {
 
     private static final String[] ROWS = new String[]{
-            "qwertyuiop",
-            "asdfghjkl",
-            "zxcvbnm"
+        "qwertyuiop",
+        "asdfghjkl",
+        "zxcvbnm"
     };
 
     @Override
@@ -36,8 +36,8 @@ class Solution2 implements Solution {
                 }
             }
             if ((count[0] > 0 && count[1] == 0 && count[2] == 0)
-                    || (count[1] > 0 && count[0] == 0 && count[2] == 0)
-                    || (count[2] > 0 && count[0] == 0 && count[1] == 0)) {
+                || (count[1] > 0 && count[0] == 0 && count[2] == 0)
+                || (count[2] > 0 && count[0] == 0 && count[1] == 0)) {
                 result.add(s);
             }
         }

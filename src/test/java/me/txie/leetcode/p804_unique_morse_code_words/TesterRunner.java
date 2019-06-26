@@ -1,13 +1,13 @@
 /**
- * Leetcode - p804_unique_morse_code_words
+ * LeetCode - p804_unique_morse_code_words
  */
 package me.txie.leetcode.p804_unique_morse_code_words;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

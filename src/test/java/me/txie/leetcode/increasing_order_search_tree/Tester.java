@@ -1,15 +1,14 @@
 /**
- * Leetcode - increasing_order_search_tree
+ * LeetCode - increasing_order_search_tree
  */
 package me.txie.leetcode.increasing_order_search_tree;
 
 import java.util.*;
 
-import com.ciaoshen.leetcode.util.*;
-
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 
+import me.txie.leetcode.util.TreeNode;
 import org.junit.BeforeClass;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -57,8 +56,8 @@ public class Tester {
     @Parameters
     public static Collection<Object[]> testcases() {
         return Arrays.asList(new Object[][]{
-                {makeTree(new Object[]{5, 3, 6, 2, 4, null, 8, 1, null, null, null, 7, 9}),
-                        makeTree(new Object[]{1, null, 2, null, 3, null, 4, null, 5, null, 6, null, 7, null, 8, null, 9})}
+            {makeTree(new Object[]{5, 3, 6, 2, 4, null, 8, 1, null, null, null, 7, 9}),
+                makeTree(new Object[]{1, null, 2, null, 3, null, 4, null, 5, null, 6, null, 7, null, 8, null, 9})}
         });
     }
 

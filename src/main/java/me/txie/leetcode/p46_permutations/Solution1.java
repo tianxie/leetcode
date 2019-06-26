@@ -1,5 +1,5 @@
 /**
- * Leetcode - p46_permutations
+ * LeetCode - p46_permutations
  */
 package me.txie.leetcode.p46_permutations;
 
@@ -50,9 +50,9 @@ class Solution1 implements Solution {
 
     private void process_solution(int[] a, int k, int[] input) {
         List<Integer> list = Arrays.stream(a)
-                .skip(1) // 解从1开始
-                .boxed()
-                .collect(Collectors.toList());
+            .skip(1) // 解从1开始
+            .boxed()
+            .collect(Collectors.toList());
         permutations.add(list);
     }
 

@@ -1,17 +1,19 @@
 /**
- * Leetcode - increasing_order_search_tree
+ * LeetCode - increasing_order_search_tree
  */
 package me.txie.leetcode.increasing_order_search_tree;
+
+import me.txie.leetcode.util.TreeNode;
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 
 /**
  * log instance is defined in Solution interface
  * this is how slf4j will work in this class:
  * =============================================
- *     if (log.isDebugEnabled()) {
- *         log.debug("a + b = {}", sum);
- *     }
+ * if (log.isDebugEnabled()) {
+ * log.debug("a + b = {}", sum);
+ * }
  * =============================================
  */
 class Solution1 implements Solution {

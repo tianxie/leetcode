@@ -1,13 +1,13 @@
 /**
- * Leetcode - p8_string_to_integer_atoi
+ * LeetCode - p8_string_to_integer_atoi
  */
 package me.txie.leetcode.p8_string_to_integer_atoi;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

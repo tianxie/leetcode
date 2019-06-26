@@ -1,13 +1,13 @@
 /**
- * Leetcode - p237_delete_node_in_a_linked_list
+ * LeetCode - p237_delete_node_in_a_linked_list
  */
 package me.txie.leetcode.p237_delete_node_in_a_linked_list;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

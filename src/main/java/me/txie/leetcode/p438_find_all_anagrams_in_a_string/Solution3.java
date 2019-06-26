@@ -1,5 +1,5 @@
 /**
- * Leetcode - p438_find_all_anagrams_in_a_string
+ * LeetCode - p438_find_all_anagrams_in_a_string
  */
 package me.txie.leetcode.p438_find_all_anagrams_in_a_string;
 
@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/** 
+/**
  * log instance is defined in Solution interface
  * this is how slf4j will work in this class:
  * =============================================
- *     if (log.isDebugEnabled()) {
- *         log.debug("a + b = {}", sum);
- *     }
+ * if (log.isDebugEnabled()) {
+ * log.debug("a + b = {}", sum);
+ * }
  * =============================================
  */
 class Solution3 implements Solution {

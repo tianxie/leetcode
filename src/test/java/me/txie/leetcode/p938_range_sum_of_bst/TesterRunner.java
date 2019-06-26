@@ -1,13 +1,13 @@
 /**
- * Leetcode - p938_range_sum_of_bst
+ * LeetCode - p938_range_sum_of_bst
  */
 package me.txie.leetcode.p938_range_sum_of_bst;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

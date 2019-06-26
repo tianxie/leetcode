@@ -1,13 +1,13 @@
 /**
- * Leetcode - p119_pascals_triangle_ii
+ * LeetCode - p119_pascals_triangle_ii
  */
 package me.txie.leetcode.p119_pascals_triangle_ii;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

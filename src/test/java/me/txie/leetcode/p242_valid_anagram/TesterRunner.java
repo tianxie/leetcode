@@ -1,13 +1,13 @@
 /**
- * Leetcode - p242_valid_anagram
+ * LeetCode - p242_valid_anagram
  */
 package me.txie.leetcode.p242_valid_anagram;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

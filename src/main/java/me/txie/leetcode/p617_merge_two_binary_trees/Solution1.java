@@ -1,11 +1,11 @@
 /**
- * Leetcode - p617_merge_two_binary_trees
+ * LeetCode - p617_merge_two_binary_trees
  */
 package me.txie.leetcode.p617_merge_two_binary_trees;
 
-import java.util.*;
+import me.txie.leetcode.util.TreeNode;
 
-import com.ciaoshen.leetcode.util.*;
+import java.util.*;
 
 /**
  * log instance is defined in Solution interface

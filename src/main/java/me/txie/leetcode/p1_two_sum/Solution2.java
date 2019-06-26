@@ -1,5 +1,5 @@
 /**
- * Leetcode - p1_two_sum
+ * LeetCode - p1_two_sum
  */
 package me.txie.leetcode.p1_two_sum;
 
@@ -10,9 +10,9 @@ import java.util.Map;
  * log instance is defined in Solution interface
  * this is how slf4j will work in this class:
  * =============================================
- *     if (log.isDebugEnabled()) {
- *         log.debug("a + b = {}", sum);
- *     }
+ * if (log.isDebugEnabled()) {
+ * log.debug("a + b = {}", sum);
+ * }
  * =============================================
  */
 class Solution2 implements Solution {

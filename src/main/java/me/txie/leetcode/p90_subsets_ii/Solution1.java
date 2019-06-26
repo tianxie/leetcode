@@ -1,5 +1,5 @@
 /**
- * Leetcode - p90_subsets_ii
+ * LeetCode - p90_subsets_ii
  */
 package me.txie.leetcode.p90_subsets_ii;
 
@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
  * this is how slf4j will work in this class:
  * =============================================
  * if (log.isDebugEnabled()) {
- *     log.debug("a + b = {}", sum);
+ * log.debug("a + b = {}", sum);
  * }
  * =============================================
  */
@@ -52,7 +52,7 @@ class Solution1 implements Solution {
 
     private void process_solution(boolean[] a, int k, int[] nums) {
         List<Integer> list = IntStream.range(1, k + 1) // 解从1开始
-                .filter(i -> a[i]).mapToObj(i -> nums[i - 1]).collect(Collectors.toList());
+            .filter(i -> a[i]).mapToObj(i -> nums[i - 1]).collect(Collectors.toList());
 
         boolean contains = false;
         for (List<Integer> l : subsets) {
@@ -71,9 +71,9 @@ class Solution1 implements Solution {
             return false;
         } else {
             Map<Integer, Long> mapa = a.stream()
-                    .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
             Map<Integer, Long> mapb = b.stream()
-                    .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
             if (mapa.size() != mapb.size()) {
                 return false;
             } else {

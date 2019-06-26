@@ -1,15 +1,14 @@
 /**
- * Leetcode - maximum_depth_of_binary_tree
+ * LeetCode - maximum_depth_of_binary_tree
  */
 package me.txie.leetcode.maximum_depth_of_binary_tree;
 
 import java.util.*;
 
-import com.ciaoshen.leetcode.util.*;
-
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 
+import me.txie.leetcode.util.TreeNode;
 import org.junit.BeforeClass;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -57,7 +56,7 @@ public class Tester {
     @Parameters
     public static Collection<Object[]> testcases() {
         return Arrays.asList(new Object[][]{
-                {makeTree(new Object[]{3, 9, 20, null, null, 15, 7}), 3}
+            {makeTree(new Object[]{3, 9, 20, null, null, 15, 7}), 3}
         });
     }
 

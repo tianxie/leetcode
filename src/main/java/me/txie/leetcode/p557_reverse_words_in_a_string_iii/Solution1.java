@@ -1,19 +1,19 @@
 /**
- * Leetcode - p557_reverse_words_in_a_string_iii
+ * LeetCode - p557_reverse_words_in_a_string_iii
  */
 package me.txie.leetcode.p557_reverse_words_in_a_string_iii;
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 
 import static org.apache.commons.lang3.ArrayUtils.reverse;
 
-/** 
+/**
  * log instance is defined in Solution interface
  * this is how slf4j will work in this class:
  * =============================================
- *     if (log.isDebugEnabled()) {
- *         log.debug("a + b = {}", sum);
- *     }
+ * if (log.isDebugEnabled()) {
+ * log.debug("a + b = {}", sum);
+ * }
  * =============================================
  */
 class Solution1 implements Solution {
@@ -44,7 +44,7 @@ class Solution1 implements Solution {
         if (array != null) {
             int i = startIndexInclusive < 0 ? 0 : startIndexInclusive;
 
-            for(int j = Math.min(array.length, endIndexExclusive) - 1; j > i; ++i) {
+            for (int j = Math.min(array.length, endIndexExclusive) - 1; j > i; ++i) {
                 char tmp = array[j];
                 array[j] = array[i];
                 array[i] = tmp;

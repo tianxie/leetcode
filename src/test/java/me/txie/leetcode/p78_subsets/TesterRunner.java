@@ -1,13 +1,13 @@
 /**
- * Leetcode - p78_subsets
+ * LeetCode - p78_subsets
  */
 package me.txie.leetcode.p78_subsets;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

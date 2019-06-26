@@ -1,13 +1,13 @@
 /**
- * Leetcode - p171_excel_sheet_column_number
+ * LeetCode - p171_excel_sheet_column_number
  */
 package me.txie.leetcode.p171_excel_sheet_column_number;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

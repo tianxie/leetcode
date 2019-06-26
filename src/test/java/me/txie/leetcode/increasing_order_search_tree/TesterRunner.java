@@ -1,13 +1,13 @@
 /**
- * Leetcode - increasing_order_search_tree
+ * LeetCode - increasing_order_search_tree
  */
 package me.txie.leetcode.increasing_order_search_tree;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

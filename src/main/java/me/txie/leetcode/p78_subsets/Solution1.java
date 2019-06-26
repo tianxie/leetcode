@@ -1,18 +1,19 @@
 /**
- * Leetcode - p78_subsets
+ * LeetCode - p78_subsets
  */
 package me.txie.leetcode.p78_subsets;
+
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-/** 
+/**
  * log instance is defined in Solution interface
  * this is how slf4j will work in this class:
  * =============================================
- *     if (log.isDebugEnabled()) {
- *         log.debug("a + b = {}", sum);
- *     }
+ * if (log.isDebugEnabled()) {
+ * log.debug("a + b = {}", sum);
+ * }
  * =============================================
  */
 class Solution1 implements Solution {
@@ -50,9 +51,9 @@ class Solution1 implements Solution {
 
     private void process_solution(boolean[] a, int k, int[] nums) {
         List<Integer> list = IntStream.range(1, k + 1) // 解从1开始
-                .filter(i -> a[i])
-                .mapToObj(i -> nums[i - 1])
-                .collect(Collectors.toList());
+            .filter(i -> a[i])
+            .mapToObj(i -> nums[i - 1])
+            .collect(Collectors.toList());
         subsets.add(list);
     }
 

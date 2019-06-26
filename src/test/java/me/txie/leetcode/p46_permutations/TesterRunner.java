@@ -1,13 +1,13 @@
 /**
- * Leetcode - p46_permutations
+ * LeetCode - p46_permutations
  */
 package me.txie.leetcode.p46_permutations;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

@@ -1,5 +1,5 @@
 /**
- * Leetcode - p1_two_sum
+ * LeetCode - p1_two_sum
  */
 package me.txie.leetcode.p1_two_sum;
 
@@ -10,5 +10,6 @@ interface Solution {
 
     // use this Object to print the log (call from slf4j facade)
     Logger log = LoggerFactory.getLogger(Solution.class);
+
     int[] twoSum(int[] nums, int target);
 }

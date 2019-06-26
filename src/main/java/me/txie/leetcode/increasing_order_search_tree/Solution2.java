@@ -1,11 +1,11 @@
 /**
- * Leetcode - increasing_order_search_tree
+ * LeetCode - increasing_order_search_tree
  */
 package me.txie.leetcode.increasing_order_search_tree;
 
-import java.util.*;
+import me.txie.leetcode.util.TreeNode;
 
-import com.ciaoshen.leetcode.util.*;
+import java.util.*;
 
 /**
  * log instance is defined in Solution interface

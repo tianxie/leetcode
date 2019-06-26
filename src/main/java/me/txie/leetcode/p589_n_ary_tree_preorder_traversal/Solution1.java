@@ -1,16 +1,17 @@
 /**
- * Leetcode - p589_n_ary_tree_preorder_traversal
+ * LeetCode - p589_n_ary_tree_preorder_traversal
  */
 package me.txie.leetcode.p589_n_ary_tree_preorder_traversal;
+
 import java.util.*;
 
-/** 
+/**
  * log instance is defined in Solution interface
  * this is how slf4j will work in this class:
  * =============================================
- *     if (log.isDebugEnabled()) {
- *         log.debug("a + b = {}", sum);
- *     }
+ * if (log.isDebugEnabled()) {
+ * log.debug("a + b = {}", sum);
+ * }
  * =============================================
  */
 

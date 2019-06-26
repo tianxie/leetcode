@@ -1,13 +1,13 @@
 /**
- * Leetcode - p977_squares_of_a_sorted_array
+ * LeetCode - p977_squares_of_a_sorted_array
  */
 package me.txie.leetcode.p977_squares_of_a_sorted_array;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

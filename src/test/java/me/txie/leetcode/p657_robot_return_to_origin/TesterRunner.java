@@ -1,13 +1,13 @@
 /**
- * Leetcode - p657_robot_return_to_origin
+ * LeetCode - p657_robot_return_to_origin
  */
 package me.txie.leetcode.p657_robot_return_to_origin;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

@@ -1,13 +1,13 @@
 /**
- * Leetcode - p344_reverse_string
+ * LeetCode - p344_reverse_string
  */
 package me.txie.leetcode.p344_reverse_string;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

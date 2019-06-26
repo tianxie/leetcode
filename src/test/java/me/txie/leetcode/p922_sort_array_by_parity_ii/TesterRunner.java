@@ -1,13 +1,13 @@
 /**
- * Leetcode - p922_sort_array_by_parity_ii
+ * LeetCode - p922_sort_array_by_parity_ii
  */
 package me.txie.leetcode.p922_sort_array_by_parity_ii;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

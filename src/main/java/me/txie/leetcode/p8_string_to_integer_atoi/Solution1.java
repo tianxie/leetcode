@@ -1,11 +1,9 @@
 /**
- * Leetcode - p8_string_to_integer_atoi
+ * LeetCode - p8_string_to_integer_atoi
  */
 package me.txie.leetcode.p8_string_to_integer_atoi;
 
 import java.util.*;
-
-import com.ciaoshen.leetcode.util.*;
 
 /**
  * log instance is defined in Solution interface

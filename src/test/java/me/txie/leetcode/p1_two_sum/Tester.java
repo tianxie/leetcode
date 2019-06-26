@@ -1,5 +1,5 @@
 /**
- * Leetcode - p1_two_sum
+ * LeetCode - p1_two_sum
  */
 package me.txie.leetcode.p1_two_sum;
 
@@ -55,7 +55,7 @@ public class Tester {
     @Parameters
     public static Collection<Object[]> testcases() {
         return Arrays.asList(new Object[][]{
-                {new int[]{2, 7, 11, 15}, 9, new int[]{0, 1}}
+            {new int[]{2, 7, 11, 15}, 9, new int[]{0, 1}}
         });
     }
 

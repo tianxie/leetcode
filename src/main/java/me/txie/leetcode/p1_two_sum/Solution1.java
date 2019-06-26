@@ -1,5 +1,5 @@
 /**
- * Leetcode - p1_two_sum
+ * LeetCode - p1_two_sum
  */
 package me.txie.leetcode.p1_two_sum;
 

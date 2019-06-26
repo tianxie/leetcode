@@ -1,13 +1,13 @@
 /**
- * Leetcode - maximum_depth_of_binary_tree
+ * LeetCode - maximum_depth_of_binary_tree
  */
 package me.txie.leetcode.maximum_depth_of_binary_tree;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

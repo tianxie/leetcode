@@ -1,11 +1,9 @@
 /**
- * Leetcode - p832_flipping_an_image
+ * LeetCode - p832_flipping_an_image
  */
 package me.txie.leetcode.p832_flipping_an_image;
 
 import java.util.*;
-
-import com.ciaoshen.leetcode.util.*;
 
 /**
  * log instance is defined in Solution interface
@@ -31,7 +29,7 @@ class Solution1 implements Solution {
     private void flip(int[] a) {
         for (int i = 0; i < a.length / 2; i++) {
             int tmp = a[i];
-            a[i] = a[a.length - 1 -i];
+            a[i] = a[a.length - 1 - i];
             a[a.length - 1 - i] = tmp;
         }
     }

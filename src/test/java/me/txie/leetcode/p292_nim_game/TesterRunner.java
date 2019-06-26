@@ -1,13 +1,13 @@
 /**
- * Leetcode - p292_nim_game
+ * LeetCode - p292_nim_game
  */
 package me.txie.leetcode.p292_nim_game;
 
 // basic util
+
 import java.util.*;
-import com.ciaoshen.leetcode.util.*;
 // leetcode-helper library
-import com.ciaoshen.leetcode.helper.PropertyScanner;
+import me.txie.leetcode.util.PropertyScanner;
 // junit 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

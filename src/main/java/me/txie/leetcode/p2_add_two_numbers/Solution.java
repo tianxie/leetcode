@@ -1,5 +1,5 @@
 /**
- * Leetcode - p2_add_two_numbers
+ * LeetCode - p2_add_two_numbers
  */
 package me.txie.leetcode.p2_add_two_numbers;
 
