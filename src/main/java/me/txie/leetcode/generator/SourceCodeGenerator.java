@@ -26,7 +26,7 @@ public class SourceCodeGenerator {
 
     public static void main(String[] args) throws IOException, URISyntaxException {
 
-        Problem dataModel = createDataModel();
+        Problem dataModel = DataModelLoader.load();
 
         List<Template> templates = TemplateFinder.getTemplates();
 
@@ -80,15 +80,4 @@ public class SourceCodeGenerator {
             return Paths.get(projectRoot, JAVA_SRC, packagePath, problemName, fileName + "." + JAVA_EXT);
         }
     }
-
-    private static Problem createDataModel() {
-        Problem problem = new Problem();
-        problem.setPackageName("test");
-        problem.setProblemName("hello");
-        problem.setProblemSignature("void f(int a)");
-        problem.setUtilPackage("util");
-        return problem;
-    }
-
-
 }

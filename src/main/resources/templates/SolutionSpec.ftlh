@@ -1,15 +1,18 @@
-package me.txie.leetcode.${packageName}
+package ${packageName}.${problemName}
 
 import spock.lang.Specification
 
 class SolutionSpec extends Specification {
-    def "TwoSum"() {
-        given: "Solution1"
+
+    def "${problemName}"() {
+        given: "Solution"
         Solution solution = new Solution1();
+//        Solution solution = new Solution2();
 
         expect: "Pass unit test"
 
         where: "Samples"
         
     }
+    
 }
