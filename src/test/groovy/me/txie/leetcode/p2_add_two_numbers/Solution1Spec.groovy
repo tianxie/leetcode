@@ -9,10 +9,11 @@ class Solution1Spec extends Specification {
         def solution = new Solution1();
 
         expect: "Pass unit test"
-        solution.addTwoNumbers(l1, l2) == expected
+        solution.addTwoNumbers(l1, l2).toString() == expected.toString()
 
         where: "Samples"
-        l1                      | l2                      || expected
-        new ListNode([2, 4, 3]) | new ListNode([5, 6, 4]) || new ListNode([7, 0, 8])
+        l1                     | l2                     || expected
+        ListNode.of([2, 4, 3]) | ListNode.of([5, 6, 4]) || ListNode.of([7, 0, 8])
+        ListNode.of([9, 9, 9]) | ListNode.of([1])       || ListNode.of([0, 0, 0, 1])
     }
 }
