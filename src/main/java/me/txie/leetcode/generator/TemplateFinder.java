@@ -59,7 +59,7 @@ public class TemplateFinder {
         Configuration cfg = new Configuration(Configuration.VERSION_2_3_28);
 
         // Specify the source where the template files come from:
-        cfg.setClassForTemplateLoading(SourceCodeGenerator.class, TEMPLATES_DIR);
+        cfg.setClassForTemplateLoading(LeetCodeBoilerplate.class, TEMPLATES_DIR);
 
         // Set the preferred charset template files are stored in. UTF-8 is
         // a good choice in most applications:

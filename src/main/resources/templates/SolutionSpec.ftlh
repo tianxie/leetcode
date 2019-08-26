@@ -10,6 +10,7 @@ class SolutionSpec extends Specification {
 //        Solution solution = new Solution2();
 
         expect: "Pass unit test"
+        
 
         where: "Samples"
         

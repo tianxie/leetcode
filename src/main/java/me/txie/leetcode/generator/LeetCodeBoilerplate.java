@@ -15,7 +15,7 @@ import java.util.function.Function;
 
 import static java.util.stream.Collectors.toMap;
 
-public class SourceCodeGenerator {
+public class LeetCodeBoilerplate {
 
     private static final String JAVA_SRC = "src/main/java";
     private static final String TEST_SRC = "src/test/java";
@@ -52,7 +52,7 @@ public class SourceCodeGenerator {
                     Files.createDirectories(parent);
                 }
             } catch (IOException e) {
-                System.err.println(e);
+                e.printStackTrace(System.err);
                 continue;
             }
 
