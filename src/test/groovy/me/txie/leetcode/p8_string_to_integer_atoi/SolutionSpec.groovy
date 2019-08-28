@@ -2,7 +2,7 @@ package me.txie.leetcode.p8_string_to_integer_atoi
 
 import spock.lang.Specification
 
-class Solution1Spec extends Specification {
+class SolutionSpec extends Specification {
     def "MyAtoi"() {
         given: "Solution1"
         Solution solution = new Solution1();

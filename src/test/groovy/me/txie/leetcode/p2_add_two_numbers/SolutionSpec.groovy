@@ -3,7 +3,7 @@ package me.txie.leetcode.p2_add_two_numbers
 import me.txie.leetcode.util.ListNode
 import spock.lang.Specification
 
-class Solution1Spec extends Specification {
+class SolutionSpec extends Specification {
     def "AddTwoNumbers"() {
         given: "Solution1"
         def solution = new Solution1();
