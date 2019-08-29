@@ -16,5 +16,9 @@ import ${utilPackage}.*;
  * =============================================
  */
 class Solution1 implements Solution {
-
+    
+    @Override
+    public ${problemSignature} {
+        
+    }
 }
