@@ -4,10 +4,10 @@ import java.util.concurrent.Semaphore;
 
 class FooBar {
     private int n;
-    private Semaphore semaphoreFoo;
-    private Semaphore semaphoreBar;
+    private final Semaphore semaphoreFoo;
+    private final Semaphore semaphoreBar;
 
-    public FooBar(int n) throws InterruptedException {
+    public FooBar(int n) {
         this.n = n;
         this.semaphoreFoo = new Semaphore(1);
         this.semaphoreBar = new Semaphore(0);
