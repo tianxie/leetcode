@@ -5,8 +5,8 @@ import java.util.List;
 
 public class TreeNode {
     /**
-     * val
-     * / \
+     *    val
+     *    / \
      * left right
      */
     public TreeNode left;
@@ -31,8 +31,8 @@ public class TreeNode {
      * @return List of Integer
      * <p>
      * For example, given the following tree,
-     * a
-     * / \
+     *   a
+     *  / \
      * b  null
      * output = [[a],[b,null]]
      * null node will be listed in the output
@@ -63,4 +63,20 @@ public class TreeNode {
         return res;
     }
 
+    public static TreeNode of(Object... objects) {
+        return makeTree(objects, 0);
+    }
+
+    private static TreeNode makeTree(Object[] objects, int i) {
+        if (i < objects.length) {
+            Object o = objects[i];
+            if (o != null) {
+                TreeNode node = new TreeNode((int) o);
+                node.left = makeTree(objects, 2 * i + 1);
+                node.right = makeTree(objects, 2 * i + 2);
+                return node;
+            }
+        }
+        return null;
+    }
 }

@@ -56,26 +56,9 @@ public class Tester {
     @Parameters
     public static Collection<Object[]> testcases() {
         return Arrays.asList(new Object[][]{
-            {makeTree(new Object[]{5, 3, 6, 2, 4, null, 8, 1, null, null, null, 7, 9}),
-                makeTree(new Object[]{1, null, 2, null, 3, null, 4, null, 5, null, 6, null, 7, null, 8, null, 9})}
+            {TreeNode.of(5, 3, 6, 2, 4, null, 8, 1, null, null, null, 7, 9),
+                TreeNode.of(1, null, 2, null, 3, null, 4, null, 5, null, 6, null, 7, null, 8, null, 9)}
         });
-    }
-
-    private static TreeNode makeTree(Object[] objects) {
-        return makeTree(objects, 0);
-    }
-
-    private static TreeNode makeTree(Object[] objects, int i) {
-        if (i < objects.length) {
-            Object o = objects[i];
-            if (o != null) {
-                TreeNode node = new TreeNode((int) o);
-                node.left = makeTree(objects, 2 * i + 1);
-                node.right = makeTree(objects, 2 * i + 2);
-                return node;
-            }
-        }
-        return null;
     }
 
     /**=========================== for each test case ============================== */
@@ -111,7 +94,7 @@ public class Tester {
 
         TreeNode actual = solution.increasingBST(root);
 
-        assertThat(actual, is(equalTo(expected)));
+        assertThat(actual.toString(), is(equalTo(expected.toString())));
 
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("pass unit test!");

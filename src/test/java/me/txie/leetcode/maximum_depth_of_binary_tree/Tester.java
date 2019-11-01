@@ -56,25 +56,8 @@ public class Tester {
     @Parameters
     public static Collection<Object[]> testcases() {
         return Arrays.asList(new Object[][]{
-            {makeTree(new Object[]{3, 9, 20, null, null, 15, 7}), 3}
+            {TreeNode.of(3, 9, 20, null, null, 15, 7), 3}
         });
-    }
-
-    private static TreeNode makeTree(Object[] objects) {
-        return makeTree(objects, 0);
-    }
-
-    private static TreeNode makeTree(Object[] objects, int i) {
-        if (i < objects.length) {
-            Object o = objects[i];
-            if (o != null) {
-                TreeNode node = new TreeNode((int) o);
-                node.left = makeTree(objects, 2 * i + 1);
-                node.right = makeTree(objects, 2 * i + 2);
-                return node;
-            }
-        }
-        return null;
     }
 
     /**=========================== for each test case ============================== */
