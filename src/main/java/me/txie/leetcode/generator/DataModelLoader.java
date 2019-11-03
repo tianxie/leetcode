@@ -18,7 +18,7 @@ public class DataModelLoader {
 
         Problem problem = new Problem();
         problem.setPackageName(props.getProperty("problem.package"));
-        problem.setProblemName(props.getProperty("problem.name"));
+        problem.setProblemName(props.getProperty("problem.name").replace('-', '_'));
         problem.setProblemSignature(props.getProperty("problem.signature"));
         problem.setUtilPackage(props.getProperty("problem.util"));
         return problem;
