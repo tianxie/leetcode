@@ -56,8 +56,10 @@ public class TreeNode {
             }
             if (line.isEmpty()) continue;
             for (Integer n : line) { // ignore the bottom line with all null nodes
-                if (n != null) res.add(line);
-                break;
+                if (n != null) {
+                    res.add(line);
+                    break;
+                }
             }
         }
         return res;
