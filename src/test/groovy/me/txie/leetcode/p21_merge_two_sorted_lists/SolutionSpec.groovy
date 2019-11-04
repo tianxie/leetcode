@@ -15,7 +15,7 @@ class SolutionSpec extends Specification {
 
         where: "Samples"
         l1                     | l2                     || expected
-        ListNode.of([1, 2, 4]) | ListNode.of([1, 3, 4]) || ListNode.of([1, 1, 2, 3, 4, 4])
+        ListNode.of(1, 2, 4) | ListNode.of(1, 3, 4) || ListNode.of(1, 1, 2, 3, 4, 4)
     }
 
 }

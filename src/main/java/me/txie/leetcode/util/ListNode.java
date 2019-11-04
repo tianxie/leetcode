@@ -11,15 +11,15 @@ public class ListNode {
         val = x;
     }
     
-    public static ListNode of(List<Integer> values) {
-        ListNode head = new ListNode(-1);
-        ListNode x = head;
+    public static ListNode of(int... values) {
+        ListNode dummyHead = new ListNode(-1);
+        ListNode p = dummyHead;
         
         for (int i : values) {
-            x.next = new ListNode(i);
-            x = x.next;
+            p.next = new ListNode(i);
+            p = p.next;
         }
-        return head.next;
+        return dummyHead.next;
     }
 
     public String toString() {
