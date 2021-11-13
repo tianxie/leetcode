@@ -1,20 +1,15 @@
 /**
  * LeetCode - ${problemName}
+ * ${problemUrl}
  */
  
 package ${packageName}.${problemName};
+
 import java.util.*;
 import ${utilPackage}.*;
+import lombok.extern.slf4j.Slf4j;
 
-/** 
- * log instance is defined in Solution interface
- * this is how slf4j will work in this class:
- * =============================================
- *     if (log.isDebugEnabled()) {
- *         log.debug("a + b = {}", sum);
- *     }
- * =============================================
- */
+@Slf4j
 class Solution1 implements Solution {
     
     @Override

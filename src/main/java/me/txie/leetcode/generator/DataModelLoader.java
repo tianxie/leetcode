@@ -21,6 +21,7 @@ public class DataModelLoader {
         problem.setProblemName(props.getProperty("problem.name").replace('-', '_'));
         problem.setProblemSignature(props.getProperty("problem.signature"));
         problem.setUtilPackage(props.getProperty("problem.util"));
+        problem.setProblemUrl(props.getProperty("problem.url"));
         return problem;
     }
 }

@@ -6,6 +6,7 @@ public class Problem {
     private String problemName;
     private String problemSignature;
     private String utilPackage;
+    private String problemUrl;
 
     public String getUtilPackage() {
         return utilPackage;
@@ -37,5 +38,13 @@ public class Problem {
 
     public void setProblemSignature(String problemSignature) {
         this.problemSignature = problemSignature;
+    }
+
+    public String getProblemUrl() {
+        return problemUrl;
+    }
+
+    public void setProblemUrl(String problemUrl) {
+        this.problemUrl = problemUrl;
     }
 }
