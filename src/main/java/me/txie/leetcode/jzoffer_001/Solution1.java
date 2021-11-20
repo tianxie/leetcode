@@ -33,6 +33,7 @@ class Solution1 implements Solution {
             divisor = -divisor;
         }
 
+        // 使用减法实现两个负数的除法
         int result = divideCore(dividend, divisor);
         return negative == 1 ? -result : result;
     }
@@ -40,7 +41,7 @@ class Solution1 implements Solution {
     private int divideCore(int dividend, int divisor) {
         int result = 0;
 
-        // 前面已经转成两个负数的除法，此处用小于等于
+        // 前面已经将被除数和除数转成两个负数，此处用小于等于
         while (dividend <= divisor) {
             int value = divisor;
             int quotient = 1;
