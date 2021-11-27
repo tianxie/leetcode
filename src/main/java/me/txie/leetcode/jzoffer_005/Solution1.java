@@ -30,5 +30,5 @@ class Solution1 implements Solution {
         return result;
     }
 }
-// 时间复杂度：
-// 空间复杂度：
+// 时间复杂度：O(nk + n^2)，n是数组words的长度，k是每个字符串的平均长度
+// 空间复杂度：O(n)
