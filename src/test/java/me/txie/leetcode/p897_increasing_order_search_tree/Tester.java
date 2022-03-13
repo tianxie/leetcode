@@ -1,7 +1,7 @@
 /**
  * LeetCode - increasing_order_search_tree
  */
-package me.txie.leetcode.increasing_order_search_tree;
+package me.txie.leetcode.p897_increasing_order_search_tree;
 
 import java.util.*;
 
