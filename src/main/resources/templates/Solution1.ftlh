@@ -13,7 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 class Solution1 implements Solution {
     
     @Override
-    public ${problemSignature} {
+    public ${problemSignature?no_esc} {
         
     }
 }

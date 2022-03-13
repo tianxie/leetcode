@@ -8,5 +8,5 @@ import java.util.*;
 import ${utilPackage}.*;
 
 interface Solution {
-    ${problemSignature};
+    ${problemSignature?no_esc};
 }
