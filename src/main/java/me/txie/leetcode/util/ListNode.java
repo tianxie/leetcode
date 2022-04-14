@@ -31,5 +31,23 @@ public class ListNode {
         } while (cursor != null);
         return String.join("->", strings);
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof ListNode)) {
+            return false;
+        }
+        
+        ListNode e1 = this;
+        ListNode e2 = (ListNode) obj;
+        while (e1 != null && e2 != null && e1.val == e2.val) {
+            e1 = e1.next;
+            e2 = e2.next;
+        }
+        return (e1 == null) && (e2 == null);
+    }
 }
 

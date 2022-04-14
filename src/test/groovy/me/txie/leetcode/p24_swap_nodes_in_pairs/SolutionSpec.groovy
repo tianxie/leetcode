@@ -11,10 +11,10 @@ class SolutionSpec extends Specification {
 //        Solution solution = new Solution2()
 
         expect: "Pass unit test"
-        solution.swapPairs(head).toString() == expected.toString()
+        solution.swapPairs(head) == expected
 
         where: "Samples"
-        head                      || expected
+        head                    || expected
         ListNode.of(1, 2, 3, 4) || ListNode.of(2, 1, 4, 3)
     }
 

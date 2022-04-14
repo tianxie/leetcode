@@ -11,7 +11,7 @@ class SolutionSpec extends Specification {
         Solution solution = new Solution2()
 
         expect: "Pass unit test"
-        solution.mergeKLists(lists).toString() == expected.toString()
+        solution.mergeKLists(lists) == expected
 
         where: "Samples"
         lists                                                                         || expected

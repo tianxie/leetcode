@@ -11,10 +11,10 @@ class SolutionSpec extends Specification {
 //        Solution solution = new Solution2()
 
         expect: "Pass unit test"
-        solution.mergeTwoLists(l1, l2).toString() == expected.toString()
+        solution.mergeTwoLists(l1, l2) == expected
 
         where: "Samples"
-        l1                     | l2                     || expected
+        l1                   | l2                   || expected
         ListNode.of(1, 2, 4) | ListNode.of(1, 3, 4) || ListNode.of(1, 1, 2, 3, 4, 4)
     }
 

@@ -11,7 +11,7 @@ class SolutionSpec extends Specification {
 //        Solution solution = new Solution2()
 
         expect: "Pass unit test"
-        solution.removeNthFromEnd(head, n).toString() == expected.toString()
+        solution.removeNthFromEnd(head, n) == expected
 
         where: "Samples"
         head                       | n || expected
