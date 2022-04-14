@@ -11,7 +11,7 @@ class SolutionSpec extends Specification {
 //        Solution solution = new Solution2()
 
         expect: "Pass unit test"
-        solution.sortedArrayToBST(nums).toString() == expected.toString()
+        solution.sortedArrayToBST(nums) == expected
 
         where: "Samples"
         nums                        || expected

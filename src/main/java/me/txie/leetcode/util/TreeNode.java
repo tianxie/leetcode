@@ -81,4 +81,27 @@ public class TreeNode {
         }
         return null;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof TreeNode)) {
+            return false;
+        }
+
+        List<List<Integer>> thisNodes = this.bfs();
+        List<List<Integer>> thatNodes = ((TreeNode) obj).bfs();
+        if (thisNodes.size() != thatNodes.size()) {
+            return false;
+        }
+        for (int i = 0; i < thisNodes.size(); i++) {
+            if (!(thisNodes.get(i).equals(thatNodes.get(i)))) {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
