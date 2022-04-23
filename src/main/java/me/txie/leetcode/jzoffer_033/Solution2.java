@@ -25,5 +25,5 @@ class Solution2 implements Solution {
         return new ArrayList<>(groups.values());
     }
 }
-// 时间复杂度：
-// 空间复杂度：
+// 时间复杂度：O(nmlogm)，n个单词，平均每个单词m个字符
+// 空间复杂度：O(n)
