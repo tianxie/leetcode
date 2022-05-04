@@ -1,12 +1,14 @@
 package me.txie.leetcode.util;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class TreeNode {
     /**
-     *    val
-     *    / \
+     * val
+     * / \
      * left right
      */
     public TreeNode left;
@@ -31,14 +33,14 @@ public class TreeNode {
      * @return List of Integer
      * <p>
      * For example, given the following tree,
-     *   a
-     *  / \
+     * a
+     * / \
      * b  null
      * output = [[a],[b,null]]
      * null node will be listed in the output
      */
     private List<List<Integer>> bfs() {
-        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        List<List<Integer>> res = new ArrayList<>();
         List<TreeNode> buffer = new ArrayList<>();
         buffer.add(this);
         while (!buffer.isEmpty()) {
@@ -66,20 +68,38 @@ public class TreeNode {
     }
 
     public static TreeNode of(Object... objects) {
-        return makeTree(objects, 0);
-    }
-
-    private static TreeNode makeTree(Object[] objects, int i) {
-        if (i < objects.length) {
-            Object o = objects[i];
-            if (o != null) {
-                TreeNode node = new TreeNode((int) o);
-                node.left = makeTree(objects, 2 * i + 1);
-                node.right = makeTree(objects, 2 * i + 2);
-                return node;
-            }
+        if (objects == null || objects.length == 0) {
+            return null;
         }
-        return null;
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        TreeNode root = new TreeNode((int) objects[0]);
+        queue.offer(root);
+
+        TreeNode parent = null;
+        boolean isLeft = true;
+        for (int i = 1; i < objects.length; i++) {
+            if (isLeft) {
+                parent = queue.poll();
+            }
+
+            Object o = objects[i];
+            TreeNode node = null;
+            if (o != null) {
+                node = new TreeNode((int) o);
+                queue.offer(node);
+            }
+
+            if (isLeft) {
+                parent.left = node;
+            } else {
+                parent.right = node;
+            }
+
+            isLeft = !isLeft;
+        }
+
+        return root;
     }
 
     @Override

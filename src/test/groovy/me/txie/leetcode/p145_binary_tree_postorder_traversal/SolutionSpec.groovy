@@ -14,11 +14,11 @@ class SolutionSpec extends Specification {
         solution.postorderTraversal(root) == expected
 
         where: "Samples"
-        root                                   || expected
-        TreeNode.of(1, null, 2, null, null, 3) || [3, 2, 1]
-        TreeNode.of()                          || []
-        TreeNode.of(1)                         || [1]
-        
+        root                       || expected
+        TreeNode.of(1, null, 2, 3) || [3, 2, 1]
+        TreeNode.of()              || []
+        TreeNode.of(1)             || [1]
+
     }
 
 }

@@ -14,11 +14,11 @@ class SolutionSpec extends Specification {
         solution.inorderTraversal(root) == expected
 
         where: "Samples"
-        root                                   || expected
-        TreeNode.of(1, null, 2, null, null, 3) || [1, 3, 2]
-        TreeNode.of()                          || []
-        TreeNode.of(1)                         || [1]
-        TreeNode.of(1, 2)                      || [2, 1]
+        root                       || expected
+        TreeNode.of(1, null, 2, 3) || [1, 3, 2]
+        TreeNode.of()              || []
+        TreeNode.of(1)             || [1]
+        TreeNode.of(1, 2)          || [2, 1]
 
     }
 
