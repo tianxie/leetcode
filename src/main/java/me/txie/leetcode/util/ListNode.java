@@ -11,6 +11,11 @@ public class ListNode {
         val = x;
     }
     
+    public ListNode(int x, ListNode next) {
+        this.val = x;
+        this.next = next;
+    }
+    
     public static ListNode of(int... values) {
         ListNode dummyHead = new ListNode(-1);
         ListNode p = dummyHead;
