@@ -1,4 +1,4 @@
-package me.txie.leetcode.jzoffer_42;
+package me.txie.leetcode.jzoffer_042;
 
 import java.util.LinkedList;
 import java.util.Queue;
